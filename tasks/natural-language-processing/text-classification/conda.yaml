@@ -1,0 +1,11 @@
+name: text_classification
+
+channels:
+- defaults
+dependencies:
+- python=3.7.3
+- keras==2.2.4
+- tensorflow==1.13.1
+- pip:
+  - mlflow
+  - cloudpickle==0.8.0

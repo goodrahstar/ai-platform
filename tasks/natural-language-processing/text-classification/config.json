@@ -1,0 +1,11 @@
+{
+    "experiment_name": "abc2",
+    "file_path": "./data/textdata.csv",
+    "input_dim": 22,
+    "model_path": "./model/sample.h5",
+    "model_type": "textcnn",
+    "maxlen": 100,
+    "train": true,
+    "epochs": 2,
+    "batch_size": 10
+  }

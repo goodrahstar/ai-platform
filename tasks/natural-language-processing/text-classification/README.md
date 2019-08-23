@@ -8,19 +8,19 @@ This example demonstrate how to train a deep learning model to perform text clas
 
 ```.
 ├── conda.yaml
-├── config.json  # Contains all the config to train the model
+├── config.json                  # Contains all the config to train the model
 ├── data
 │   └── textdata.csv
 ├── __init__.py
 ├── MLproject
 ├── mlruns
 │   └── 0
-├── model       # Definition of the keras model
+├── model                        # Definition of the keras model
 │   ├── __init__.py
 │   └── textcnn_model.py
 ├── README.md
-├── trainer.py  # Main entry point
-└── utils       # Preprocessing modules 
+├── trainer.py                   # Main entry point
+└── utils                        # Preprocessing modules 
     ├── __init__.py
     └── textcnn_preprocess.py
 ```

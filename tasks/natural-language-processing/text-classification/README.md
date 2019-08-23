@@ -32,7 +32,25 @@ To train the model, run the example as a standard MLflow project:
 
     `git clone https://github.com/goodrahstar/ai-platform`
     `cd ai-platform` 
-  
+    
+3. Modify Config:
+If you want to make any modifications on the config parameters which stores the information about the dataset and model hyper parameters. It is available inside `./task/natural-language-processing/text-classification/config.json` .  And looks like this:
+
+
+```
+        {
+            "experiment_name": "abc2",
+            "file_path": "./data/textdata.csv",
+            "input_dim": 22,
+            "model_path": "./model/sample.h5",
+            "model_type": "textcnn",
+            "maxlen": 100,
+            "train": true,
+            "epochs": 2,
+            "batch_size": 10
+          }
+```
+
 2. Train the model:
 
     `mlflow run tasks/natural-language-processing/text-classification`
@@ -40,3 +58,5 @@ To train the model, run the example as a standard MLflow project:
 3. Deploy the model:
 
    `mlflow models serve --model-uri runs:///18fa522576934ac08a989b1cba6af124/model --port 12345`
+
+

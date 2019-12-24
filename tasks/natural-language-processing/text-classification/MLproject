@@ -1,3 +1,4 @@
+
 name: text_classification
 
 conda_env: conda.yaml
@@ -7,3 +8,4 @@ entry_points:
     parameters:
       config_file:  {type: string, default: "./config.json"}
     command: "python trainer.py --config_file {config_file} "
+
